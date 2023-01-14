@@ -3,6 +3,9 @@ import Link from 'next/link'
 export default function ProductList({productId}) {
     return(
         <div>
+            <Link href="/">
+                Home
+            </Link>
             <Link href="/product/1">
                 First product
             </Link>
