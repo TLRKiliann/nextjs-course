@@ -6,15 +6,15 @@ nextjs crash course with Vishwas (youtube nextjs 79 lessons)
 
 ## INSTALLATION
 
-> pnpm create next-app --typescript (not correctly configured yet)
+`> pnpm create next-app --typescript` (not correctly configured yet)
 
-> cd folder_name
+`> cd folder_name`
 
-> pnpm run dev
+`> pnpm run dev`
 
 Launch app with :
 
-> pnpm run dev
+`└─ $ ▶ pnpm run dev`
 
 and put address
 
@@ -26,7 +26,7 @@ in bar of navigation of your browser.
 
 ## Styles
 
-pnpm install --save-dev sass
+`└─ $ ▶ pnpm install --save-dev sass`
 
 (and change filename & import by replacing file.css by file.scss)
 
@@ -87,7 +87,7 @@ http://localhost:3000/product/101
 
 ## Another intersting dynamic segment :
 
-./pages/docs/[[...params]].tsx
+`./pages/docs/[[...params]].tsx`
 
 ```
 http://localhost:3000/docs/features/(number)
