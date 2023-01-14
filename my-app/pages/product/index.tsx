@@ -1,6 +1,10 @@
 import Link from 'next/link'
 
-export default function ProductList({productId}) {
+type ProductListProps = {
+    productId: number
+}
+
+export default function ProductList({productId = 111}: ProductListProps) {
     return(
         <div>
             <Link href="/">
@@ -16,7 +20,7 @@ export default function ProductList({productId}) {
                 Third product
             </Link>
             <Link href={`/product/${productId}`} replace>
-                Product {productId}
+                Product (click me & go back, you go back to home page directly) {productId}
             </Link>
         </div>
     )
