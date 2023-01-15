@@ -6,15 +6,15 @@ nextjs crash course with Vishwas (youtube nextjs 79 lessons)
 
 ## INSTALLATION
 
-> pnpm create next-app --typescript (not correctly configured yet)
+`> pnpm create next-app --typescript` (not correctly configured yet)
 
-> cd folder_name
+`> cd folder_name`
 
-> pnpm run dev
+`> pnpm run dev`
 
 Launch app with :
 
-> pnpm run dev
+`└─ $ ▶ pnpm run dev`
 
 and put address
 
@@ -26,7 +26,7 @@ in bar of navigation of your browser.
 
 ## Styles
 
-pnpm install --save-dev sass
+`└─ $ ▶ pnpm install --save-dev sass`
 
 (and change filename & import by replacing file.css by file.scss)
 
@@ -53,6 +53,8 @@ http://localhost:3000
 ```
 ./pages/product/index.tsx
 http://localhost:3000/product/
+http://localhost:3000/product/(num)
+http://localhost:3000/product/(num)/review/(num)
 ```
 
 ## Main page of params :
@@ -60,6 +62,8 @@ http://localhost:3000/product/
 ```
 ./pages/docs/index.tsx
 http://localhost:3000/docs
+http://localhost:3000/docs/features/(num)
+http://localhost:3000/docs/features/(num)/concepts/(num)
 ```
 
 ## Dynamic segment
@@ -71,8 +75,8 @@ you can route by id without create multiple files.
 ./pages/product
 
 ```
-http://localhost:3000/product/(number)
-http://localhost:3000/product/(number)/review/(anothernumber)
+http://localhost:3000/product/(num)
+http://localhost:3000/product/(num)/review/(num)
 ```
 
 **Example 1**
@@ -87,15 +91,17 @@ http://localhost:3000/product/101
 
 ## Another intersting dynamic segment :
 
-./pages/docs/[[...params]].tsx
+`./pages/docs/[[...params]].tsx`
 
 ```
-http://localhost:3000/docs/features/(number)
+http://localhost:3000/docs/features/(num)
 or/&
-http://localhost:3000/docs/features/(number)/concepts/(anothernumber)
+http://localhost:3000/docs/features/(num)/concepts/(num)
 ```
 
 **Example 2**
+
+You can enter this in your browser address bar.
 
 ```
 http://localhost:3000/features/1/concept/1
