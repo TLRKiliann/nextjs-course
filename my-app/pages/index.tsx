@@ -8,9 +8,9 @@ import styles from '@/styles/Home.module.scss'
 
 export default function Home() {
   return (
-    <>
-      <h1>Home page</h1>
-      <Link href="/product">BlogProduct</Link>
-    </>
+    <div className={styles.backgroundCol}>
+      <h1 className={styles.home}>Home page</h1>
+      <Link href="/product" className={styles.home}>BlogProduct</Link>
+    </div>
   )
 }
