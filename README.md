@@ -1,6 +1,6 @@
 # nextjs-course (under construction)
 
-nextjs crash course with Vishwas (youtube nextjs 79 lessons)
+nextjs crash course with Vishwas Youtube (1 part)
 
 ---
 
